@@ -3,158 +3,228 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Abcas Ananth Boyapati Consulting and Advisory Services | Workday Studio and integration services</title>
+<title>Ananth Boyapati Consulting and Advisory Services | Workday Integration Consulting</title>
 <meta name="description" content="Workday Studio integrations, calculated fields, reports and EIB support for partner firms and in-house teams. Based in India.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:wght@500;600&display=swap" rel="stylesheet">
 <style>
-:root{
-  --ink:#16213A; --paper:#F6F7F9; --card:#FFFFFF; --line:#D5DAE3;
-  --mute:#4F5B70; --signal:#B86E00; --signal-bg:#FBEFD9;
-}
+:root{--navy:#0A1B33;--navy2:#12305A;--ink:#1E2A3F;--mute:#586579;--line:#DBE0E8;--bg:#F5F7FA;--white:#fff;--accent:#1B6FA8;--gold:#B8913A}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);
-  font-family:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  font-size:17px;line-height:1.6}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--white);font-size:16px;line-height:1.7}
+h1,h2,h3{font-family:"Source Serif 4",Georgia,"Times New Roman",serif;font-weight:600;color:var(--navy);line-height:1.2;margin:0}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
-.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
-header{border-bottom:1px solid var(--line)}
-header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:18px;padding-bottom:18px;flex-wrap:wrap}
-.brand{font-weight:700;font-size:16px;text-decoration:none;max-width:420px;line-height:1.3}
-nav a{margin-left:22px;text-decoration:none;color:var(--mute);font-size:15px}
-nav a:hover{color:var(--ink);text-decoration:underline}
-.hero{padding:72px 0 56px}
-.hero h1{font-size:clamp(34px,5.4vw,58px);line-height:1.08;letter-spacing:-.02em;margin:0 0 20px;max-width:16ch}
-.hero p.lead{font-size:20px;color:var(--mute);max-width:56ch;margin:0 0 32px}
-.btn{display:inline-block;background:var(--ink);color:#fff;padding:14px 24px;border-radius:6px;text-decoration:none;font-weight:500}
-.btn:hover{background:#24345A}
-.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink);margin-left:10px}
-.btn.alt:hover{background:var(--ink);color:#fff}
-.flow{margin:48px 0 0;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:28px 24px 16px}
-.flow svg{width:100%;height:auto;display:block}
-.flow figcaption{font-size:14px;color:var(--mute);margin-top:6px}
-.node rect{fill:var(--paper);stroke:var(--ink);stroke-width:1.5}
-.node.mid rect{fill:var(--ink)}
-.node text{font:500 15px "Schibsted Grotesk",system-ui,sans-serif;fill:var(--ink)}
-.node.mid text{fill:#fff}
-.sub{font:400 13px "Schibsted Grotesk",system-ui,sans-serif;fill:var(--mute)}
-.track{stroke:var(--line);stroke-width:2;fill:none}
-.pulse{fill:var(--signal)}
-section{padding:56px 0;border-top:1px solid var(--line)}
-h2{font-size:28px;letter-spacing:-.01em;margin:0 0 8px}
-.intro{color:var(--mute);margin:0 0 32px;max-width:60ch}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;border:1px solid var(--line);border-radius:10px;background:var(--card);overflow:hidden}
-.services article{padding:24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);margin:-1px -1px 0 0}
-.services h3{margin:0 0 8px;font-size:18px}
-.services p{margin:0;color:var(--mute);font-size:16px}
-.steps{max-width:62ch;padding:0;margin:0;list-style:none;counter-reset:s}
-.steps li{counter-increment:s;padding:0 0 22px 52px;position:relative}
-.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:34px;height:34px;border-radius:50%;background:var(--signal-bg);color:var(--signal);font-weight:700;display:grid;place-items:center}
-.steps strong{display:block}
-.steps span{color:var(--mute)}
-.contact{background:var(--ink);color:#fff;border-top:none}
-.contact h2{color:#fff}
-.contact p{color:#C9D1E0;max-width:56ch}
-.contact a.btn{background:#fff;color:var(--ink)}
-.contact a.btn:hover{background:var(--signal-bg)}
-footer{padding:28px 0;font-size:14px;color:var(--mute)}
-@media (prefers-reduced-motion:no-preference){
-  .pulse{animation:travel 3.2s ease-in-out 1 .4s both}
-}
-@keyframes travel{from{transform:translateX(0)}to{transform:translateX(560px)}}
-@media (max-width:640px){
-  nav{display:none}
-  .btn.alt{margin:10px 0 0}
-  .hero{padding-top:48px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 28px}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:68px;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.mark{width:38px;height:38px;flex:none}
+.brand span{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:16px;color:var(--navy);line-height:1.2;max-width:300px}
+nav{display:flex;align-items:center;gap:26px}
+nav a{font-size:14px;text-decoration:none;color:var(--mute)}
+nav a:hover{color:var(--navy)}
+nav a.cta{background:var(--navy);color:#fff;padding:9px 18px;border-radius:3px}
+nav a.cta:hover{background:var(--navy2)}
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:48px 48px}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.3fr 1fr;gap:64px;align-items:center;padding-top:88px;padding-bottom:92px}
+.hero h1{color:#fff;font-size:clamp(32px,4.4vw,50px);letter-spacing:-.01em;margin-bottom:20px}
+.hero p{color:#BFCCE0;font-size:18px;max-width:54ch;margin:0 0 32px}
+.btn{display:inline-block;padding:14px 28px;border-radius:3px;text-decoration:none;font-weight:500;font-size:15px}
+.btn.p{background:#fff;color:var(--navy)}
+.btn.p:hover{background:#E6EDF8}
+.btn.s{border:1px solid #6A82A6;color:#fff;margin-left:12px}
+.btn.s:hover{background:rgba(255,255,255,.08)}
+.spec{background:rgba(10,27,51,.7);border:1px solid #34527E;border-top:3px solid var(--gold);padding:8px 24px 12px}
+.spec h2{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:13px;font-weight:600;color:#9DB2D3;margin:14px 0 6px;letter-spacing:.02em}
+.spec div{display:flex;justify-content:space-between;gap:18px;padding:12px 0;border-top:1px solid #2A4670;font-size:15px}
+.spec div:first-of-type{border-top:none}
+.spec dl{margin:0}.spec dt{color:#9DB2D3}.spec dd{margin:0;text-align:right;color:#fff}
+.strip{background:var(--bg);border-bottom:1px solid var(--line)}
+.strip .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0}
+.strip div{padding:22px 24px;border-right:1px solid var(--line);font-size:14px;color:var(--mute)}
+.strip div:last-child{border-right:none}
+.strip strong{display:block;color:var(--navy);font-weight:600;font-size:15px;margin-bottom:2px}
+section{padding:80px 0}
+section.alt{background:var(--bg)}
+.eyebrow{font-size:13px;font-weight:600;color:var(--accent);margin-bottom:10px}
+h2.t{font-size:32px;letter-spacing:-.01em;margin-bottom:12px}
+.sub{color:var(--mute);margin:0 0 44px;max-width:64ch;font-size:17px}
+.rows{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:280px 1fr;gap:40px;padding:28px 0;border-bottom:1px solid var(--line)}
+.row h3{font-size:20px}
+.row p{margin:0}
+.row ul{margin:10px 0 0;padding-left:18px;color:var(--mute);font-size:15px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.about p{margin:0 0 16px}
+.facts{background:var(--white);border:1px solid var(--line);border-left:3px solid var(--gold);padding:22px 26px}
+.facts h3{font-size:18px;margin-bottom:12px}
+.facts ul{margin:0;padding-left:18px}
+.facts li{margin-bottom:8px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;border:1px solid var(--line);background:var(--white)}
+.step{padding:26px 24px;border-right:1px solid var(--line)}
+.step:last-child{border-right:none}
+.step b{display:block;color:var(--accent);font-size:13px;margin-bottom:6px}
+.step h3{font-size:18px;margin-bottom:8px}
+.step p{margin:0;color:var(--mute);font-size:15px}
+.faq details{border-bottom:1px solid var(--line);padding:18px 0}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{cursor:pointer;font-weight:500;color:var(--navy);list-style:none;display:flex;justify-content:space-between;gap:20px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:20px;line-height:1;color:var(--accent)}
+.faq details[open] summary::after{content:"\2212"}
+.faq p{margin:12px 0 0;color:var(--mute);max-width:70ch}
+.contact{background:var(--navy);color:#fff}
+.contact .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:center}
+.contact h2{color:#fff;font-size:32px;margin-bottom:12px}
+.contact p{color:#BFCCE0;margin:0;max-width:52ch}
+.box{border:1px solid #34527E;padding:26px 28px;background:rgba(255,255,255,.04)}
+.box small{display:block;color:#9DB2D3;font-size:13px;margin-bottom:6px}
+.box a{color:#fff;font-weight:500;font-size:18px;word-break:break-all}
+.box p{margin-top:14px;font-size:14px}
+footer{background:#071326;color:#8FA3C4;padding:30px 0;font-size:13px}
+@media (max-width:860px){
+  .hero .wrap,.about,.contact .wrap{grid-template-columns:1fr;gap:36px}
+  .hero .wrap{padding-top:56px;padding-bottom:60px}
+  .row{grid-template-columns:1fr;gap:8px}
+  nav a:not(.cta){display:none}
+  .btn.s{margin:12px 0 0}
+  .step{border-right:none;border-bottom:1px solid var(--line)}
+  .step:last-child{border-bottom:none}
+  .strip div{border-right:none;border-bottom:1px solid var(--line)}
+  section{padding:56px 0}
 }
 </style>
 </head>
 <body>
 <header>
   <div class="wrap">
-    <a class="brand" href="#top">Abcas Ananth Boyapati Consulting and Advisory Services</a>
+    <a class="brand" href="#top" aria-label="Ananth Boyapati Consulting and Advisory Services, home">
+      <svg class="mark" viewBox="0 0 38 38" aria-hidden="true"><rect x="1" y="1" width="36" height="36" fill="#0A1B33"/><rect x="1" y="30" width="36" height="7" fill="#B8913A"/><text x="19" y="25" text-anchor="middle" font-family="Source Serif 4,Georgia,serif" font-weight="600" font-size="17" fill="#fff">AB</text></svg>
+      <span>Ananth Boyapati Consulting and Advisory Services</span>
+    </a>
     <nav aria-label="Main">
       <a href="#services">Services</a>
-      <a href="#how">How we work</a>
-      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="#approach">Approach</a>
+      <a href="#faq">FAQ</a>
+      <a class="cta" href="#contact">Contact</a>
     </nav>
   </div>
 </header>
 
 <main id="top">
-  <div class="wrap hero">
-    <h1>Workday Studio and integration work, delivered from India.</h1>
-    <p class="lead">We build and fix Workday integrations, calculated fields and reports for partner firms and in-house teams. Start with one small paid task and judge the work yourself.</p>
-    <a class="btn" href="#contact">Request a paid trial task</a>
-    <a class="btn alt" href="#services">See services</a>
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Workday integration and technical consulting for partner firms and in-house teams</h1>
+        <p>Studio integrations, calculated fields, reports and EIB support, delivered from India with a documented handover on every engagement.</p>
+        <a class="btn p" href="#contact">Request a paid trial task</a>
+        <a class="btn s" href="#services">View services</a>
+      </div>
+      <aside class="spec" aria-label="Technical capabilities">
+        <h2>Technical capabilities</h2>
+        <dl>
+          <div><dt>Platform</dt><dd>Workday Studio</dd></div>
+          <div><dt>Transformation</dt><dd>XSLT, MVEL, XPath</dd></div>
+          <div><dt>Interfaces</dt><dd>REST, SOAP, SFTP</dd></div>
+          <div><dt>Configuration</dt><dd>Calculated fields, reports, EIB</dd></div>
+          <div><dt>Automation</dt><dd>Python</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
 
-    <figure class="flow">
-      <svg viewBox="0 0 720 150" role="img" aria-label="A data flow from a source system through a Workday Studio integration to a target system">
-        <path class="track" d="M150 60 H250 M470 60 H570"/>
-        <circle class="pulse" cx="150" cy="60" r="6"/>
-        <g class="node"><rect x="20" y="30" width="130" height="60" rx="8"/><text x="85" y="66" text-anchor="middle">Source system</text></g>
-        <g class="node mid"><rect x="250" y="30" width="220" height="60" rx="8"/><text x="360" y="66" text-anchor="middle">Workday Studio integration</text></g>
-        <g class="node"><rect x="570" y="30" width="130" height="60" rx="8"/><text x="635" y="66" text-anchor="middle">Target system</text></g>
-        <text class="sub" x="85" y="116" text-anchor="middle">Files, APIs</text>
-        <text class="sub" x="360" y="116" text-anchor="middle">Transform, validate, handle errors</text>
-        <text class="sub" x="635" y="116" text-anchor="middle">SFTP, REST, SOAP</text>
-      </svg>
-      <figcaption>The typical shape of the integration work we take on.</figcaption>
-    </figure>
+  <div class="strip">
+    <div class="wrap">
+      <div><strong>Sandbox-only access</strong>Work stays inside your approved test tenant</div>
+      <div><strong>Paid trial first</strong>Judge quality before you commit</div>
+      <div><strong>Documented handover</strong>Every task ends with clear notes</div>
+      <div><strong>US time-zone overlap</strong>Available on request</div>
+    </div>
   </div>
 
   <section id="services">
     <div class="wrap">
-      <h2>What we do</h2>
-      <p class="intro">Focused Workday technical work, from a single fix to a full integration build.</p>
-      <div class="services">
-        <article>
-          <h3>Workday Studio integrations</h3>
-          <p>Design, build and test integrations with XSLT and MVEL transformations, error handling and multi-system delivery.</p>
-        </article>
-        <article>
-          <h3>Calculated fields and reports</h3>
-          <p>Build, debug and document calculated fields and custom reports that give HR and finance teams the numbers they need.</p>
-        </article>
-        <article>
-          <h3>EIB and integration support</h3>
-          <p>Fix failing loads, build EIB templates and troubleshoot integration errors so data keeps moving.</p>
-        </article>
-        <article>
-          <h3>Python automation and testing</h3>
-          <p>Scripts that check integration output, compare files and automate repeat reporting work.</p>
-        </article>
+      <div class="eyebrow">Services</div>
+      <h2 class="t">Workday technical services</h2>
+      <p class="sub">Focused delivery support for consulting partners and internal Workday teams, from a single fix to a full integration build.</p>
+      <div class="rows">
+        <div class="row"><h3>Workday Studio integrations</h3><div><p>Design, build and test integrations with transformation logic, error handling, notifications and delivery to external systems.</p></div></div>
+        <div class="row"><h3>Calculated fields and reports</h3><div><p>Build, debug and document calculated fields and custom reports so HR and finance teams get accurate, reusable results.</p></div></div>
+        <div class="row"><h3>EIB and integration support</h3><div><p>Fix failing loads, build and validate EIB templates, and troubleshoot integration errors so data keeps moving.</p></div></div>
+        <div class="row"><h3>Python automation and testing</h3><div><p>Scripts that compare integration output, check files against specifications and automate repeat reporting tasks.</p></div></div>
       </div>
     </div>
   </section>
 
-  <section id="how">
+  <section id="about" class="alt">
+    <div class="wrap about">
+      <div>
+        <div class="eyebrow">About</div>
+        <h2 class="t">A focused practice, built on delivery</h2>
+        <p>Ananth Boyapati Consulting and Advisory Services is a consulting company based in India. We work with Workday partner firms and in-house teams that need dependable technical capacity.</p>
+        <p>The founder has previously built and run a technology startup and combines Workday Studio experience with software engineering skills in Python and C++.</p>
+      </div>
+      <div class="facts">
+        <h3>Where we fit</h3>
+        <ul>
+          <li>Overflow and subcontract capacity for Workday consulting partners</li>
+          <li>Short fixes and larger integration builds</li>
+          <li>Engagements by task, by day or on an ongoing basis</li>
+          <li>Clear communication in US-friendly working hours on request</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach">
     <div class="wrap">
-      <h2>How we work with you</h2>
-      <p class="intro">Built for firms that need extra capacity without a long onboarding.</p>
-      <ol class="steps">
-        <li><strong>Paid trial task</strong><span>Start with a small, defined piece of work so you can judge quality before committing more.</span></li>
-        <li><strong>Sandbox access only</strong><span>We work in your sandbox or approved test tenant, under your access rules and confidentiality terms.</span></li>
-        <li><strong>Clear handover</strong><span>You receive documented work and a short summary of what changed and how to test it.</span></li>
-        <li><strong>Flexible engagement</strong><span>Per task, per day or ongoing overflow capacity, with US time-zone overlap available on request.</span></li>
-      </ol>
+      <div class="eyebrow">Approach</div>
+      <h2 class="t">How an engagement runs</h2>
+      <p class="sub">A simple, low-risk process designed for teams that are short on time.</p>
+      <div class="steps">
+        <div class="step"><b>Step 1</b><h3>Scope</h3><p>We agree the task, inputs, timeline and price in writing.</p></div>
+        <div class="step"><b>Step 2</b><h3>Build</h3><p>Work is done in your sandbox or approved test tenant.</p></div>
+        <div class="step"><b>Step 3</b><h3>Test</h3><p>We validate against your specifications and sample data.</p></div>
+        <div class="step"><b>Step 4</b><h3>Handover</h3><p>You receive a summary of changes, test notes and open items.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="alt">
+    <div class="wrap">
+      <div class="eyebrow">FAQ</div>
+      <h2 class="t">Common questions</h2>
+      <p class="sub">The questions delivery managers usually ask before engaging an external consultant.</p>
+      <div class="faq">
+        <details><summary>How do you handle access and confidentiality?</summary><p>We work only in the environments you approve, usually a sandbox, and follow your access and confidentiality terms. We are happy to sign an NDA before work begins.</p></details>
+        <details><summary>Can we start with a small task?</summary><p>Yes. A paid trial task lets you assess quality, communication and turnaround before any larger commitment.</p></details>
+        <details><summary>How are engagements priced?</summary><p>Per task, per day or as ongoing capacity. We confirm scope and price in writing before starting.</p></details>
+        <details><summary>What time zones can you cover?</summary><p>We are based in India and can arrange overlap with US working hours on request.</p></details>
+      </div>
     </div>
   </section>
 
   <section id="contact" class="contact">
     <div class="wrap">
-      <h2>Send us your first task</h2>
-      <p>Tell us what you need built or fixed. We’ll reply with scope, timeline and price for a paid trial.</p>
-      <a class="btn" href="mailto:baluworkday101@gmail.com">baluworkday101@gmail.com</a>
+      <div>
+        <h2>Start with one task</h2>
+        <p>Send a short description of what needs to be built or fixed. We will reply with scope, timeline and price for a paid trial.</p>
+      </div>
+      <div class="box">
+        <small>Email</small>
+        <a href="mailto:baluworkday101@gmail.com">baluworkday101@gmail.com</a>
+        <p>We usually reply within one business day.</p>
+      </div>
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="wrap">© 2026 Abcas Ananth Boyapati Consulting and Advisory Services. Registered company in India. Workday is a trademark of Workday, Inc.; we are not affiliated with or endorsed by Workday.</div>
+  <div class="wrap">© 2026 Ananth Boyapati Consulting and Advisory Services. Registered company in India. Workday is a trademark of Workday, Inc.; this company is not affiliated with or endorsed by Workday.</div>
 </footer>
 </body>
 </html>
