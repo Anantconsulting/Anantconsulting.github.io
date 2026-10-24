@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abcas Ananth Boyapati Consulting and Advisory Services | Workday Studio and integration services</title>
+<meta name="description" content="Workday Studio integrations, calculated fields, reports and EIB support for partner firms and in-house teams. Based in India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16213A; --paper:#F6F7F9; --card:#FFFFFF; --line:#D5DAE3;
+  --mute:#4F5B70; --signal:#B86E00; --signal-bg:#FBEFD9;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:17px;line-height:1.6}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:18px;padding-bottom:18px;flex-wrap:wrap}
+.brand{font-weight:700;font-size:16px;text-decoration:none;max-width:420px;line-height:1.3}
+nav a{margin-left:22px;text-decoration:none;color:var(--mute);font-size:15px}
+nav a:hover{color:var(--ink);text-decoration:underline}
+.hero{padding:72px 0 56px}
+.hero h1{font-size:clamp(34px,5.4vw,58px);line-height:1.08;letter-spacing:-.02em;margin:0 0 20px;max-width:16ch}
+.hero p.lead{font-size:20px;color:var(--mute);max-width:56ch;margin:0 0 32px}
+.btn{display:inline-block;background:var(--ink);color:#fff;padding:14px 24px;border-radius:6px;text-decoration:none;font-weight:500}
+.btn:hover{background:#24345A}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink);margin-left:10px}
+.btn.alt:hover{background:var(--ink);color:#fff}
+.flow{margin:48px 0 0;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:28px 24px 16px}
+.flow svg{width:100%;height:auto;display:block}
+.flow figcaption{font-size:14px;color:var(--mute);margin-top:6px}
+.node rect{fill:var(--paper);stroke:var(--ink);stroke-width:1.5}
+.node.mid rect{fill:var(--ink)}
+.node text{font:500 15px "Schibsted Grotesk",system-ui,sans-serif;fill:var(--ink)}
+.node.mid text{fill:#fff}
+.sub{font:400 13px "Schibsted Grotesk",system-ui,sans-serif;fill:var(--mute)}
+.track{stroke:var(--line);stroke-width:2;fill:none}
+.pulse{fill:var(--signal)}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:28px;letter-spacing:-.01em;margin:0 0 8px}
+.intro{color:var(--mute);margin:0 0 32px;max-width:60ch}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;border:1px solid var(--line);border-radius:10px;background:var(--card);overflow:hidden}
+.services article{padding:24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);margin:-1px -1px 0 0}
+.services h3{margin:0 0 8px;font-size:18px}
+.services p{margin:0;color:var(--mute);font-size:16px}
+.steps{max-width:62ch;padding:0;margin:0;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;padding:0 0 22px 52px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:34px;height:34px;border-radius:50%;background:var(--signal-bg);color:var(--signal);font-weight:700;display:grid;place-items:center}
+.steps strong{display:block}
+.steps span{color:var(--mute)}
+.contact{background:var(--ink);color:#fff;border-top:none}
+.contact h2{color:#fff}
+.contact p{color:#C9D1E0;max-width:56ch}
+.contact a.btn{background:#fff;color:var(--ink)}
+.contact a.btn:hover{background:var(--signal-bg)}
+footer{padding:28px 0;font-size:14px;color:var(--mute)}
+@media (prefers-reduced-motion:no-preference){
+  .pulse{animation:travel 3.2s ease-in-out 1 .4s both}
+}
+@keyframes travel{from{transform:translateX(0)}to{transform:translateX(560px)}}
+@media (max-width:640px){
+  nav{display:none}
+  .btn.alt{margin:10px 0 0}
+  .hero{padding-top:48px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top">Abcas Ananth Boyapati Consulting and Advisory Services</a>
+    <nav aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#how">How we work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <h1>Workday Studio and integration work, delivered from India.</h1>
+    <p class="lead">We build and fix Workday integrations, calculated fields and reports for partner firms and in-house teams. Start with one small paid task and judge the work yourself.</p>
+    <a class="btn" href="#contact">Request a paid trial task</a>
+    <a class="btn alt" href="#services">See services</a>
+
+    <figure class="flow">
+      <svg viewBox="0 0 720 150" role="img" aria-label="A data flow from a source system through a Workday Studio integration to a target system">
+        <path class="track" d="M150 60 H250 M470 60 H570"/>
+        <circle class="pulse" cx="150" cy="60" r="6"/>
+        <g class="node"><rect x="20" y="30" width="130" height="60" rx="8"/><text x="85" y="66" text-anchor="middle">Source system</text></g>
+        <g class="node mid"><rect x="250" y="30" width="220" height="60" rx="8"/><text x="360" y="66" text-anchor="middle">Workday Studio integration</text></g>
+        <g class="node"><rect x="570" y="30" width="130" height="60" rx="8"/><text x="635" y="66" text-anchor="middle">Target system</text></g>
+        <text class="sub" x="85" y="116" text-anchor="middle">Files, APIs</text>
+        <text class="sub" x="360" y="116" text-anchor="middle">Transform, validate, handle errors</text>
+        <text class="sub" x="635" y="116" text-anchor="middle">SFTP, REST, SOAP</text>
+      </svg>
+      <figcaption>The typical shape of the integration work we take on.</figcaption>
+    </figure>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>What we do</h2>
+      <p class="intro">Focused Workday technical work, from a single fix to a full integration build.</p>
+      <div class="services">
+        <article>
+          <h3>Workday Studio integrations</h3>
+          <p>Design, build and test integrations with XSLT and MVEL transformations, error handling and multi-system delivery.</p>
+        </article>
+        <article>
+          <h3>Calculated fields and reports</h3>
+          <p>Build, debug and document calculated fields and custom reports that give HR and finance teams the numbers they need.</p>
+        </article>
+        <article>
+          <h3>EIB and integration support</h3>
+          <p>Fix failing loads, build EIB templates and troubleshoot integration errors so data keeps moving.</p>
+        </article>
+        <article>
+          <h3>Python automation and testing</h3>
+          <p>Scripts that check integration output, compare files and automate repeat reporting work.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <h2>How we work with you</h2>
+      <p class="intro">Built for firms that need extra capacity without a long onboarding.</p>
+      <ol class="steps">
+        <li><strong>Paid trial task</strong><span>Start with a small, defined piece of work so you can judge quality before committing more.</span></li>
+        <li><strong>Sandbox access only</strong><span>We work in your sandbox or approved test tenant, under your access rules and confidentiality terms.</span></li>
+        <li><strong>Clear handover</strong><span>You receive documented work and a short summary of what changed and how to test it.</span></li>
+        <li><strong>Flexible engagement</strong><span>Per task, per day or ongoing overflow capacity, with US time-zone overlap available on request.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Send us your first task</h2>
+      <p>Tell us what you need built or fixed. We’ll reply with scope, timeline and price for a paid trial.</p>
+      <a class="btn" href="mailto:baluworkday101@gmail.com">baluworkday101@gmail.com</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Abcas Ananth Boyapati Consulting and Advisory Services. Registered company in India. Workday is a trademark of Workday, Inc.; we are not affiliated with or endorsed by Workday.</div>
+</footer>
+</body>
+</html>
